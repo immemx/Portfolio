@@ -1,17 +1,72 @@
+:root {
+    --primary-color: #FDFFFC;
+    --secondary-color: #011627;
+    --tertiary-color: #2EC4B6;
+}
+
+
 * {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
 }
 
+/* Body Background Color */
+body {
+    background-color: var(--primary-color);
+}
+
 /* HEADER */
+header {
+    padding: 20px;;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: var(--secondary-color);
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    position: -webkit-sticky;
+    position: sticky;
+}
 
 header h1 {
-    color: pink;
+    font-weight: bold;
+    font-size: 40px;
+    color: var(--primary-color);
+    margin: 0;
+}
+
+header nav {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    padding: 10px 20px 0 0;
+}
+
+header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+
+header nav ul li {
+    display: inline-block;
+    margin-left: 25px;
+}
+
+a {
+    text-decoration: none;
+    color: var(--primary-color);
 }
 
 .hero-text {
     color: grey;
+}
+
+.profile-pic {
+    display: block;
+    margin: 10px auto;
+    max-width: 150px;
 }
 
 .matt {
