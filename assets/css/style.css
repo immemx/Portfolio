@@ -32,13 +32,11 @@ header h1 {
     font-weight: bold;
     font-size: 40px;
     color: var(--primary-color);
-    margin: 0;
 }
 
 header nav {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 20px;
-    padding: 10px 20px 0 0;
 }
 
 header nav ul {
@@ -50,17 +48,40 @@ header nav ul {
 }
 
 header nav ul li {
-    display: inline-block;
-    margin-left: 25px;
+    padding: 10px 20px;
 }
 
-a {
+header nav ul li a {
     text-decoration: none;
     color: var(--primary-color);
 }
 
+.hero {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: var(--primary-color);
+    align-items: flex-start;
+}
+
+section {
+    padding: 100px;
+}
+
+.hero-pic {
+    padding: 20px;
+    width: 40%;
+    margin: 3.5%;
+}
+
 .hero-text {
-    color: grey;
+    text-align: right;
+    width: 25%;
+    margin: 3.5%;
+}
+
+.hero-text h2 {
+    justify-content: left;
 }
 
 .profile-pic {
@@ -71,4 +92,8 @@ a {
 
 .matt {
     color: blue;
+}
+
+.project {
+    background-image: url("paper.gif");
 }
